@@ -1,0 +1,17 @@
+{
+  "name": "data-schema-maintainer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "typescript-json-schema src/schema/*.ts SomeDataDefine -o ./dist/schema/SomeDataDefine.json",
+    "gen:test": "typescript-json-schema src/schema/*.ts '*' ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "typescript-json-schema": "^0.62.0"
+  }
+}

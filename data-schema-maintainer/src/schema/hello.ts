@@ -1,6 +1,6 @@
 import { Min } from "class-validator";
 
-export abstract class SomeDataDefine {
+export class SomeDataDefine {
 
 	/**
 	 * The size of the shape.
@@ -9,6 +9,6 @@ export abstract class SomeDataDefine {
 	 * @TJS-type integer
 	 */
 	@Min(0)
-	abstract size: number;
+	size?: number
 
 }
